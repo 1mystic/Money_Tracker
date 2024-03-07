@@ -4,7 +4,7 @@ A simple web application for tracking expenses and income built with HTML, CSS, 
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/money-tracker-app.git`
+1. Clone the repository
 2. Install dependencies: `npm install`
 3. Start the server: `npm start`
 4. Open your browser and visit `http://localhost:3000`
@@ -35,6 +35,3 @@ Contributions are welcome! Please follow the standard GitHub workflow:
 4. Push to the branch: `git push origin my-feature-branch`
 5. Submit a pull request
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
