@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Transactions</h1>
+        <ul>
+            <% transactions.forEach(transaction => { %>
+                <li><%= transaction.type %> - <%= transaction.description %> - <%= transaction.amount %> - <%= transaction.date %></li>
+            <% }) %>
+        </ul>
+        <form action="/transactions" method="POST">
+            <label for="type">Type:</label>
+            <select name="type" id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <br>
+            <label for="description">Description:</label>
+            <input type="text" name="description" id="description" required>
+            <br>
+            <label for="amount">Amount:</label>
+            <input type="number" name="amount" id="amount" required>
+            <br>
+            <button type="submit">Add Transaction</button>
+        </form>
+        <a href="/">Back to Home</a>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>

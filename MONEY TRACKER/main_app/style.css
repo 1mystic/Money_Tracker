@@ -1,0 +1,80 @@
+/* Reset default margin and use professional font */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background for better readability */
+}
+
+/* Center headings and add professional styling */
+h1, h2 {
+    text-align: center;
+    margin: 20px 0; /* Add space above and below headings */
+    color: #333; /* Dark text color */
+}
+
+/* Simplify input section styles */
+.input-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.input-section label {
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-right: 10px;
+}
+
+.input-section input[type="number"],
+.input-section input[type="date"] {
+    padding: 10px;
+    margin: 10px 10px 10px 0; /* Add spacing between input fields */
+    border: 1px solid #ccc; /* Add a light border for clarity */
+    border-radius: 4px;
+}
+
+.input-section button, .delete-btn {
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Add space above buttons */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.input-section button:hover, .delete-btn:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Simplify expenses list */
+.expenses-list {
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray header background */
+    color: #333; /* Dark header text color */
+}
+
+tfoot td {
+    font-weight: bold;
+}
